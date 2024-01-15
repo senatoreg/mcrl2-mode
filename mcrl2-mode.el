@@ -2,6 +2,8 @@
 
 ;;; Commentary:
 
+;; Version: 0.1
+
 ;; Emacs integration for mCRL2
 ;;
 ;; Inspired by:
@@ -197,3 +199,4 @@
   (mcrl2-cmd (concat "mcrl2i "
                      (shell-quote-argument buffer-file-name)
                      ".lps")))
+;;; mcrl2-mode.el ends here
