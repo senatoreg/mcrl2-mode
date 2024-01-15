@@ -23,10 +23,13 @@
 (setq mcrl2-font-lock-keywords
       (let* (
              (symbols-regex '";\\|:\\|\\.\\|,\\|=>\\|=\\|+\\|->\\|-\\|*\\|\|\\|!\\|#\\|\<\>\\|(\\|)\\|{\\|}\\|\\[\\|\\]\\|<\\|>\\|&&\\|&\\|\\\\")
-             (x-keywords '("sort" "act" "proc" "init" "struct"
-                           "sum" "eqn" "map" "var"
-                           "in" "mu" "nu" "forall" "exists" "val"))
-             (x-types '("Bool" "Nat" "Int" "Set" "List" "Real" "Pos"))
+             (x-keywords '("sort" "cons" "act" "proc" "init" "struct"
+			   "sum" "eqn" "map" "var"
+			   "in" "mu" "nu" "forall" "exists" "val" "end"
+			   "delay" "yaled" "glob" "if"
+			   "lambda" "mod" "div" "mu" "nu" "pbes" "whr"
+			   "false" "delta" "nil" "tau" "true"))
+             (x-types '("Bag" "Bool" "Nat" "Int" "Set" "List" "Real" "Pos"))
              (x-functions '("allow" "comm" "hide" "rename" "block"))
 
              (x-keywords-regexp (regexp-opt x-keywords 'symbols))
